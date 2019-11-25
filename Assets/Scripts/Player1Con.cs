@@ -18,6 +18,8 @@ public class Player1Con : MonoBehaviour
     public KeyCode jump;
     public KeyCode shoot;
 
+    public GameObject throwPoint;
+    public GameObject bullet;
     private Rigidbody2D rb;
     
 
@@ -27,15 +29,17 @@ public class Player1Con : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         //Basalt movement system hvor vi bruger hastighedsvektorer
         if (Input.GetKey(left))
         {
             rb.velocity = new Vector2(-movSpeed, rb.velocity.y);
+            transform.localScale = new Vector3 (0.1f,0.1f,1f);
         } else if (Input.GetKey(right))
         {
             rb.velocity = new Vector2(movSpeed, rb.velocity.y);
+            transform.localScale = new Vector3(-0.1f, 0.1f, 1f);
         } else
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
@@ -45,6 +49,13 @@ public class Player1Con : MonoBehaviour
         if (Input.GetKey(jump) && jumpCheck == false)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            print("hop");
+        }
+
+        if (Input.GetKeyDown(shoot))
+        {
+            GameObject bulletClone = (GameObject)Instantiate(bullet, throwPoint.transform.position, throwPoint.transform.rotation);
+            bulletClone.transform.localScale = -transform.localScale * 2f;
         }
     }
 
