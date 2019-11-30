@@ -21,11 +21,14 @@ public class Player1Con : MonoBehaviour
     public GameObject throwPoint;
     public GameObject bullet;
     private Rigidbody2D rb;
+
+    public GameObject opponent;
     
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     // Update is called once per frame
@@ -46,10 +49,11 @@ public class Player1Con : MonoBehaviour
         }
 
         //Hoppe system, der checker om man trykker på hoppe knappen, og om man står på jorden, før man kan hoppe.
-        if (Input.GetKey(jump) && jumpCheck == false)
+        if (Input.GetKeyDown(jump) && jumpCheck == false)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             print("hop");
+            
         }
 
         if (Input.GetKeyDown(shoot))
@@ -62,15 +66,23 @@ public class Player1Con : MonoBehaviour
     //Her checker vi bare om vi står på jorden så vi kan hoppe.
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        jumpCheck = false;
+        if (collision.gameObject.tag == "Ground")
+        {
+            jumpCheck = false;
+        }
+
         
+       
 
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        jumpCheck = true;
-        
-
+        if (collision.gameObject.tag == "Ground")
+        {
+            jumpCheck = true;
+        }
     }
+
+   
 }

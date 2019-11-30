@@ -135,3 +135,5 @@ MonoBehaviour:
   projSpeed: 15
   bulletEffect: {fileID: 292730340971120608, guid: da375bea4b6e8044b8392a3fe164d36f,
     type: 3}
+  bloodSplat: {fileID: 3439754892727703356, guid: 6e3264596a6b61740aec79d0bb76f6bb,
+    type: 3}

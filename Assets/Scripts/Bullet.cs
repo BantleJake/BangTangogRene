@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D theRB;
 
     public GameObject bulletEffect;
+    public GameObject bloodSplat;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Instantiate(bloodSplat, transform.position, transform.rotation);
         Instantiate(bulletEffect, transform.position, transform.rotation);
 
         Destroy(gameObject);
