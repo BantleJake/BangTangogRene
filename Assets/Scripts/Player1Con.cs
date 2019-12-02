@@ -21,6 +21,7 @@ public class Player1Con : MonoBehaviour
     public GameObject throwPoint;
     public GameObject bullet;
     private Rigidbody2D rb;
+    private bool gun1ShotLimit;
 
     public GameObject opponent;
     
@@ -29,6 +30,7 @@ public class Player1Con : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        gun1ShotLimit = true;
     }
 
     // Update is called once per frame
@@ -56,10 +58,12 @@ public class Player1Con : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(shoot))
+        if (Input.GetKeyDown(shoot) && gun1ShotLimit == true)
         {
+            gun1ShotLimit = false;
             GameObject bulletClone = (GameObject)Instantiate(bullet, throwPoint.transform.position, throwPoint.transform.rotation);
             bulletClone.transform.localScale = -transform.localScale * 2f;
+            Invoke("ShootAgain", 1f);
         }
     }
 
@@ -84,5 +88,8 @@ public class Player1Con : MonoBehaviour
         }
     }
 
-   
+    void ShootAgain()
+    {
+        gun1ShotLimit = true;
+    }
 }
