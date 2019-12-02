@@ -9,8 +9,9 @@ public class CameraMove : MonoBehaviour
     
     private Vector3 middle;
     public Camera cam;
-    public float MinSizeX;
+    private float MinSizeX;
     public float MinSizeY;
+    public float buffer;
 
 
 
@@ -33,8 +34,8 @@ public class CameraMove : MonoBehaviour
     void SetCameraSize()
     {
         MinSizeX = MinSizeY * Screen.width / Screen.height;
-        float width = Mathf.Abs(play1.transform.position.x - play2.transform.position.x) * 0.5f;
-        float height = Mathf.Abs(play1.transform.position.y - play2.transform.position.y) * 0.5f;
+        float width = (Mathf.Abs(play1.transform.position.x - play2.transform.position.x) * 0.5f) +buffer;
+        float height = (Mathf.Abs(play1.transform.position.y - play2.transform.position.y) * 0.5f)+buffer;
 
         float CamSizeX = Mathf.Max(width, MinSizeX);
         cam.orthographicSize = Mathf.Max(height, CamSizeX * Screen.height / Screen.width, MinSizeY);
