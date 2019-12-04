@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Player1Con : MonoBehaviour
+public class Player1Con : MonoBehaviour 
 {
 
     //Variable der bestemmer hop og bevægelseshastighed
@@ -24,6 +25,7 @@ public class Player1Con : MonoBehaviour
     private bool gun1ShotLimit;
 
     public GameObject opponent;
+    private Vector3 originalePos;
     
 
     void Start()
@@ -31,6 +33,7 @@ public class Player1Con : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         gun1ShotLimit = true;
+        originalePos = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -75,6 +78,12 @@ public class Player1Con : MonoBehaviour
             jumpCheck = false;
         }
 
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+            print("Godt");
+            RestartRound();
+        }
         
        
 
@@ -91,5 +100,14 @@ public class Player1Con : MonoBehaviour
     void ShootAgain()
     {
         gun1ShotLimit = true;
+    }
+
+    IEnumerator RestartRound()
+    {
+        print("Vundet");
+        yield return new WaitForSeconds(2);
+        print("Resetting");
+        SceneManager.LoadScene("Jakob");
+        
     }
 }
