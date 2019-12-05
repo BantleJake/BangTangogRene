@@ -14,6 +14,8 @@ public class CameraMove : MonoBehaviour
     public float MinSizeY;
     public float buffer;
 
+    private Vector3 velocity = Vector3.zero;
+
 
 
     
@@ -43,27 +45,30 @@ public class CameraMove : MonoBehaviour
     void SetCameraPos()
     {
         Vector3 middle = (play1.transform.position + play2.transform.position) * 0.5f;
-        cam.transform.position = new Vector3(middle.x, middle.y, cam.transform.position.z);
+        Vector3 newPos = new Vector3(middle.x, middle.y, cam.transform.position.z);
+        
+        cam.transform.position = Vector3.SmoothDamp(cam.transform.position, newPos, ref velocity, 0.3f);
     }
 
     void SetCameraSize()
     {
         MinSizeX = MinSizeY * Screen.width / Screen.height;
         float width = (Mathf.Abs(play1.transform.position.x - play2.transform.position.x) * 0.5f) +buffer;
-        float height = (Mathf.Abs(play1.transform.position.y - play2.transform.position.y) * 0.5f)+buffer;
+        float height = (Mathf.Abs(play1.transform.position.y - play2.transform.position.y) * 0.5f) +buffer;
 
         float CamSizeX = Mathf.Max(width, MinSizeX);
-        cam.orthographicSize = Mathf.Max(height, CamSizeX * Screen.height / Screen.width, MinSizeY);
+        cam.orthographicSize = Mathf.Lerp (cam.orthographicSize,Mathf.Max(height, CamSizeX * Screen.height / Screen.width, MinSizeY),Time.deltaTime);
     }
 
     void SetCameraSizeForOne(GameObject Winner)
     {
-        cam.orthographicSize = 3f;
+        cam.orthographicSize = Mathf.Lerp (cam.orthographicSize,3f,Time.deltaTime);
     }
 
     void SetCameraPosForOne(GameObject Winner)
     {
-        cam.transform.position = new Vector3(Winner.transform.position.x, Winner.transform.position.y, cam.transform.position.z);
+        Vector3 newPos = new Vector3(Winner.transform.position.x, Winner.transform.position.y, cam.transform.position.z);
+        cam.transform.position = cam.transform.position = Vector3.SmoothDamp(cam.transform.position, newPos, ref velocity, 0.3f);
     }
 
     void ResetScene()
