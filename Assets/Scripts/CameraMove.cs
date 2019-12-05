@@ -16,13 +16,14 @@ public class CameraMove : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
     private int roundCount;
+    private bool roundOver;
 
     public GameObject play1Prefab;
     public GameObject play2Prefab;
 
     private void Start()
     {
-      
+        roundOver = false;
     }
 
 
@@ -37,17 +38,22 @@ public class CameraMove : MonoBehaviour
         {
             SetCameraPosForOne(play1);
             SetCameraSizeForOne(play1);
-            //Invoke("ResetScene", 3f);
-            ResetRound();
         } else if (play1 == null && play2 != null)
         {
             SetCameraPosForOne(play2);
             SetCameraSizeForOne(play2);
-            //Invoke("ResetScene", 3f);
-            ResetRound();
         }
         
-        
+        if (play1 == null && !roundOver)
+        {
+            roundOver = true;
+            RoundCounter();
+
+        } else if (play2 == null && !roundOver)
+        {
+            roundOver = true;
+            RoundCounter();
+        }
         
     }
 
@@ -86,8 +92,25 @@ public class CameraMove : MonoBehaviour
         Destroy(play2);
         play1 = Instantiate(play1Prefab, new Vector3(-18, -4, 0), Quaternion.identity);
         play2 = Instantiate(play2Prefab, new Vector3(16, 2, 0), Quaternion.identity);
-       
+        roundOver = false;
         
+    }
+
+    void RoundCounter()
+    {
+        if(roundCount == 0)
+        {
+            Invoke("ResetRound", 3f);
+            roundCount++;
+        } else if(roundCount == 1)
+        {
+            Invoke("ResetRound", 3f);
+            roundCount++;
+        }
+        else if (roundCount == 2)
+        {
+            Invoke("ResetScene", 3f);
+        }
     }
 
     void ResetScene()
