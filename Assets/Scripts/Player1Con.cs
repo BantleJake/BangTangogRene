@@ -25,17 +25,28 @@ public class Player1Con : MonoBehaviour
     private bool gun1ShotLimit;
     public bool haveGun1;
 
-    public GameObject opponent;
+    private GameObject opponent;
     private Vector3 originalePos;
     
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        
         gun1ShotLimit = true;
         originalePos = gameObject.transform.position;
         haveGun1 = false;
+
+
+       foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            if (player != this)
+            {
+                opponent = player;
+            }
+        }
+
+        Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     // Update is called once per frame

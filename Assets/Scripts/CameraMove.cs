@@ -15,9 +15,16 @@ public class CameraMove : MonoBehaviour
     public float buffer;
 
     private Vector3 velocity = Vector3.zero;
+    private int roundCount;
 
+    public GameObject play1Prefab;
+    public GameObject play2Prefab;
 
-   
+    private void Start()
+    {
+      
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -30,12 +37,14 @@ public class CameraMove : MonoBehaviour
         {
             SetCameraPosForOne(play1);
             SetCameraSizeForOne(play1);
-            Invoke("ResetScene", 3f);
+            //Invoke("ResetScene", 3f);
+            ResetRound();
         } else if (play1 == null && play2 != null)
         {
             SetCameraPosForOne(play2);
             SetCameraSizeForOne(play2);
-            Invoke("ResetScene", 3f);
+            //Invoke("ResetScene", 3f);
+            ResetRound();
         }
         
         
@@ -69,6 +78,16 @@ public class CameraMove : MonoBehaviour
     {
         Vector3 newPos = new Vector3(Winner.transform.position.x, Winner.transform.position.y, cam.transform.position.z);
         cam.transform.position = cam.transform.position = Vector3.SmoothDamp(cam.transform.position, newPos, ref velocity, 0.3f);
+    }
+
+    void ResetRound()
+    {
+        Destroy(play1);
+        Destroy(play2);
+        play1 = Instantiate(play1Prefab, new Vector3(-18, -4, 0), Quaternion.identity);
+        play2 = Instantiate(play2Prefab, new Vector3(16, 2, 0), Quaternion.identity);
+       
+        
     }
 
     void ResetScene()
