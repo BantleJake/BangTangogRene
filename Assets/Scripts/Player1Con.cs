@@ -23,7 +23,7 @@ public class Player1Con : MonoBehaviour
     public GameObject bullet;
     private Rigidbody2D rb;
     private bool gun1ShotLimit;
-    private bool haveGun1;
+    public bool haveGun1;
 
     public GameObject opponent;
     private Vector3 originalePos;
