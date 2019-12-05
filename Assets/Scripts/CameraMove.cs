@@ -17,9 +17,9 @@ public class CameraMove : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
 
 
+   
 
-    
-  // Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
         if (play1 != null && play2 != null)
@@ -57,7 +57,7 @@ public class CameraMove : MonoBehaviour
         float height = (Mathf.Abs(play1.transform.position.y - play2.transform.position.y) * 0.5f) +buffer;
 
         float CamSizeX = Mathf.Max(width, MinSizeX);
-        cam.orthographicSize = Mathf.Lerp (cam.orthographicSize,Mathf.Max(height, CamSizeX * Screen.height / Screen.width, MinSizeY),Time.deltaTime);
+        cam.orthographicSize = Mathf.Lerp (cam.orthographicSize,Mathf.Max(height, CamSizeX * Screen.height / Screen.width, MinSizeY),3f);
     }
 
     void SetCameraSizeForOne(GameObject Winner)

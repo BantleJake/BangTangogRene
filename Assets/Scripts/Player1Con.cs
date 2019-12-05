@@ -23,6 +23,7 @@ public class Player1Con : MonoBehaviour
     public GameObject bullet;
     private Rigidbody2D rb;
     private bool gun1ShotLimit;
+    private bool haveGun1;
 
     public GameObject opponent;
     private Vector3 originalePos;
@@ -34,6 +35,7 @@ public class Player1Con : MonoBehaviour
         Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         gun1ShotLimit = true;
         originalePos = gameObject.transform.position;
+        haveGun1 = false;
     }
 
     // Update is called once per frame
@@ -61,7 +63,7 @@ public class Player1Con : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(shoot) && gun1ShotLimit == true)
+        if (Input.GetKeyDown(shoot) && gun1ShotLimit == true && haveGun1 == true)
         {
             gun1ShotLimit = false;
             GameObject bulletClone = (GameObject)Instantiate(bullet, throwPoint.transform.position, throwPoint.transform.rotation);
@@ -80,11 +82,12 @@ public class Player1Con : MonoBehaviour
 
         if (collision.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject);
-            print("Godt");
-            RestartRound();
+            Destroy(gameObject);            
         }
-        
+        if (collision.gameObject.tag == "Gun1")
+        {
+            haveGun1 = true;
+        }
        
 
     }
@@ -102,12 +105,5 @@ public class Player1Con : MonoBehaviour
         gun1ShotLimit = true;
     }
 
-    IEnumerator RestartRound()
-    {
-        print("Vundet");
-        yield return new WaitForSeconds(2);
-        print("Resetting");
-        SceneManager.LoadScene("Jakob");
-        
-    }
+   
 }

@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class End : MonoBehaviour
+public class OnHitDestroy : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("DestroyThis", 1);
+        
     }
 
-   void DestroyThis()
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
     }
