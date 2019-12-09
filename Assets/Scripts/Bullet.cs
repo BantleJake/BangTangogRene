@@ -16,7 +16,9 @@ public class Bullet : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
+
+    // Vi sætter kuglens hastighed og sender den afsted i forhold til hvilken vej spilleren kigger
     void Update()
     {
         theRB.velocity = new Vector2(projSpeed * transform.localScale.x * 5, 0);
@@ -24,6 +26,8 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
+        //Når kuglen rammer noget, så spawner den et rødt splat, og en partikel effekt
         Instantiate(bloodSplat, transform.position, transform.rotation);
         Instantiate(bulletEffect, transform.position, transform.rotation);
 

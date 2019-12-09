@@ -5,19 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class CameraMove : MonoBehaviour
 {
+    //Vi definere de to spillere
     public GameObject play1;
     public GameObject play2;
     
+    //Variable vi bruger til at bestemme kameraets størrelse og placering
     private Vector3 middle;
     public Camera cam;
     private float MinSizeX;
     public float MinSizeY;
     public float buffer;
 
+    //Hastigheden vi bruger til at smoothe cameraet
     private Vector3 velocity = Vector3.zero;
+
+    //Vores variable til at holde styr på runderne
     private int roundCount;
     private bool roundOver;
 
+    //Vores to spillere som prefabs, når vi skal spawne dem igen
     public GameObject play1Prefab;
     public GameObject play2Prefab;
 
@@ -30,6 +36,7 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //I disse if-statements, checker vi om begge spillere er levende, og fokuserer kameraet på vinderen, hvem end det er
         if (play1 != null && play2 != null)
         {
             SetCameraPos();
@@ -44,6 +51,7 @@ public class CameraMove : MonoBehaviour
             SetCameraSizeForOne(play2);
         }
         
+        //Her holder vi styr på runde-antallet, og genstarter scenen når der er spillet x-antal runder
         if (play1 == null && !roundOver)
         {
             roundOver = true;
@@ -57,14 +65,18 @@ public class CameraMove : MonoBehaviour
         
     }
 
+
+    //En custom funktion der sætter kameraets position i forhold til spillernes afstand til hinanden
     void SetCameraPos()
     {
         Vector3 middle = (play1.transform.position + play2.transform.position) * 0.5f;
-        Vector3 newPos = new Vector3(middle.x, middle.y, cam.transform.position.z);
+        Vector3 newPos = new Vector3(middle.x, middle.y+2f, cam.transform.position.z);
         
         cam.transform.position = Vector3.SmoothDamp(cam.transform.position, newPos, ref velocity, 0.3f);
     }
 
+
+    //Her sætter vi kameraet orthografiske størrelse, også i forhold til spillernes afstand til hinanden.
     void SetCameraSize()
     {
         MinSizeX = MinSizeY * Screen.width / Screen.height;
@@ -75,17 +87,20 @@ public class CameraMove : MonoBehaviour
         cam.orthographicSize = Mathf.Lerp (cam.orthographicSize,Mathf.Max(height, CamSizeX * Screen.height / Screen.width, MinSizeY),3f);
     }
 
+    //Vi sætter kameraet størrelse til noget mindre, så det fokuserer på en enkelt spiller
     void SetCameraSizeForOne(GameObject Winner)
     {
         cam.orthographicSize = Mathf.Lerp (cam.orthographicSize,3f,Time.deltaTime);
     }
 
+    //Vi sætter kamera positionen på spilleren der har vundet runden.
     void SetCameraPosForOne(GameObject Winner)
     {
         Vector3 newPos = new Vector3(Winner.transform.position.x, Winner.transform.position.y, cam.transform.position.z);
         cam.transform.position = cam.transform.position = Vector3.SmoothDamp(cam.transform.position, newPos, ref velocity, 0.3f);
     }
 
+    //I denne funktion genstarter vi runden, uden at slette de ting vi har ændret. 
     void ResetRound()
     {
         Destroy(play1);
@@ -96,6 +111,7 @@ public class CameraMove : MonoBehaviour
         
     }
 
+    //I denne funktion genstarter vi runden med en lille forsinkelse, og tæller op på rundetælleren. Når vi har spillet 3 runder, genstarter scenen.
     void RoundCounter()
     {
         if(roundCount == 0)
@@ -113,6 +129,7 @@ public class CameraMove : MonoBehaviour
         }
     }
 
+    //Simpel funktion der genstarter scenen.
     void ResetScene()
     {
         SceneManager.LoadScene("Jakob");
