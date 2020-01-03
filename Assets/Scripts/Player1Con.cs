@@ -27,7 +27,7 @@ public class Player1Con : MonoBehaviour
     public bool haveGun1;
 
     //Modstanderens gameobjekt vi bruger til at forhindre dem i at kollidere
-    private GameObject opponent;
+    public GameObject opponent;
 
     //Den originale position til vores spillere, når vi skal genstarte runden
     private Vector3 originalePos;
@@ -50,13 +50,14 @@ public class Player1Con : MonoBehaviour
         //der er en i scenen.
        foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
         {
-            if (player != this)
+            if (player != this.gameObject)
             {
                 opponent = player;
             }
         }
         //Nu hvor vi har en modstander kan vi fortælle unity at den skal ignorerer collisionen mellem disse.
-        Physics2D.IgnoreCollision(opponent.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(opponent.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+        
     }
 
     // Update is called once per frame

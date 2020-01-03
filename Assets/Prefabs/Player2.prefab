@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4267650940842559380}
   - component: {fileID: 5235152074759712037}
   - component: {fileID: 7188321808395933141}
+  - component: {fileID: 1490408028}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -157,6 +158,8 @@ MonoBehaviour:
   throwPoint: {fileID: 4267650940154483798}
   bullet: {fileID: 5540546401708522699, guid: 7ec86e854fce1cb46b8d859dd230790e, type: 3}
   haveGun1: 0
+  opponent: {fileID: 0}
+  thisBodyAnimator: {fileID: 1490408028}
 --- !u!61 &5235152074759712037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,3 +202,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.18, y: -8.31}
   m_Size: {x: 7.4, y: 0.21}
   m_Direction: 1
+--- !u!95 &1490408028
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4267650940842559383}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
