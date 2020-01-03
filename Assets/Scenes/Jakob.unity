@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 8987100611712544576, guid: 1d6fe8400337a41428511f08afc0f964,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8987100611712544576, guid: 1d6fe8400337a41428511f08afc0f964,
         type: 3}
@@ -507,75 +507,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &86034425
+--- !u!1001 &138622322
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1362698101428624935, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328752, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_Name
-      value: Ketchup Gun (3)
+      value: Ketchup spawner (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.62024784
+      value: -15.992254
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.660168
+      value: -4.9104834
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.3867188
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6906671189cce4faf336b46a6c4dd6, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 562c1f69e736563489f1ffa17f83bf1d, type: 3}
 --- !u!1 &166893820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,7 +1723,7 @@ Transform:
   - {fileID: 166893822}
   - {fileID: 420887054}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457560017
 GameObject:
@@ -2010,6 +2010,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18.205133, y: 3.8816605}
   m_EdgeRadius: 0
+--- !u!1001 &461688007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9091993823840328752, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ketchup spawner (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.155518
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.421491
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3867188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 562c1f69e736563489f1ffa17f83bf1d, type: 3}
 --- !u!1 &550085783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,75 +2548,6 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
---- !u!1001 &682206997
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1362698101428624935, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_Name
-      value: Ketchup Gun (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.482145
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.6795273
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6906671189cce4faf336b46a6c4dd6, type: 3}
 --- !u!1 &730666152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2586,7 @@ Transform:
   - {fileID: 74577733}
   - {fileID: 1111250829}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733707086
 GameObject:
@@ -2774,6 +2774,75 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &810582864
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9091993823840328752, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ketchup spawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.3456535
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.8237228
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3867188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 562c1f69e736563489f1ffa17f83bf1d, type: 3}
 --- !u!1 &863788760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,75 +3101,6 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
---- !u!1001 &904378443
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1362698101428624935, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_Name
-      value: Ketchup Gun (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6906671189cce4faf336b46a6c4dd6, type: 3}
 --- !u!1 &925916744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,6 +3840,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 31.6, y: 1.472497}
   m_EdgeRadius: 0
+--- !u!1001 &1083915062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9091993823840328752, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ketchup spawner (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.519299
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.421491
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3867188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 562c1f69e736563489f1ffa17f83bf1d, type: 3}
 --- !u!1 &1111250828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,6 +4065,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1111446249
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9091993823840328752, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ketchup spawner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.308485
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0174079
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3867188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 562c1f69e736563489f1ffa17f83bf1d, type: 3}
 --- !u!1 &1278699653
 GameObject:
   m_ObjectHideFlags: 0
@@ -4493,7 +4631,7 @@ Transform:
   - {fileID: 946616481}
   - {fileID: 1388705446}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1404793028
 GameObject:
@@ -4906,6 +5044,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4267650939640190402}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1490408022 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1490408028, guid: 157ecf98e309c6248b4fd328e94ef84b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4267650939640190402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1547219321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,75 +5453,6 @@ Transform:
   m_Father: {fileID: 1404793031}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1665129801
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1362698101428624935, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_Name
-      value: Ketchup Gun (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.559998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.044219
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6906671189cce4faf336b46a6c4dd6, type: 3}
 --- !u!1 &1678157594
 GameObject:
   m_ObjectHideFlags: 0
@@ -6077,7 +6152,7 @@ Transform:
   - {fileID: 1371643207}
   - {fileID: 1773129102}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986444474
 GameObject:
@@ -6408,75 +6483,6 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1362698103039519695
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1362698101428624935, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_Name
-      value: Ketchup Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362698101428624933, guid: 1b6906671189cce4faf336b46a6c4dd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6906671189cce4faf336b46a6c4dd6, type: 3}
 --- !u!1001 &4267650939640190402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6527,7 +6533,7 @@ PrefabInstance:
     - target: {fileID: 4267650940842559385, guid: 157ecf98e309c6248b4fd328e94ef84b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4267650940842559385, guid: 157ecf98e309c6248b4fd328e94ef84b,
         type: 3}
@@ -6559,5 +6565,79 @@ PrefabInstance:
       propertyPath: opponent
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4267650940842559380, guid: 157ecf98e309c6248b4fd328e94ef84b,
+        type: 3}
+      propertyPath: thisBodyAnimator
+      value: 
+      objectReference: {fileID: 1490408022}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 157ecf98e309c6248b4fd328e94ef84b, type: 3}
+--- !u!1001 &9091993824955616146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9091993823840328752, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ketchup spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3867188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 562c1f69e736563489f1ffa17f83bf1d, type: 3}
