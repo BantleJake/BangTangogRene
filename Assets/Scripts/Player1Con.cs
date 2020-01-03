@@ -31,6 +31,9 @@ public class Player1Con : MonoBehaviour
 
     //Den originale position til vores spillere, når vi skal genstarte runden
     private Vector3 originalePos;
+
+    //Animationssystem
+    public Animator thisBodyAnimator;
     
 
     void Start()
@@ -83,10 +86,18 @@ public class Player1Con : MonoBehaviour
         if (Input.GetKeyDown(jump) && jumpCheck == false)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            
+            thisBodyAnimator.SetBool("Jumping", true);
             
         }
         
+
+        if (rb.velocity.x != 0 && jumpCheck == false)
+        {
+            thisBodyAnimator.SetBool("Moving", true);
+        } else
+        {
+            thisBodyAnimator.SetBool("Moving", false);
+        }
 
         //Det er her vi skyder med Ketchup gunnen. Vi spawner en klon af vores bullet, udfra et gameobjekt vi har placeret på vores spiller.
         //Systemet checker om vi har en ketchupgun, om vi trykker på skyde knappen, og om vi lige har skudt. 
@@ -110,6 +121,7 @@ public class Player1Con : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             jumpCheck = false;
+            thisBodyAnimator.SetBool("Jumping", false);
         }
 
         if (collision.gameObject.tag == "Bullet")
