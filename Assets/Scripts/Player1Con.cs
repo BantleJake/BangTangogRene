@@ -34,6 +34,10 @@ public class Player1Con : MonoBehaviour
 
     //Animationssystem
     public Animator thisBodyAnimator;
+    //public Animator thisArmAnimator;
+    public Animator thisGunAnimator;
+    public GameObject gunArm;
+    public GameObject penArm;
     
 
     void Start()
@@ -105,11 +109,20 @@ public class Player1Con : MonoBehaviour
         if (Input.GetKeyDown(shoot) && gun1ShotLimit == true && haveGun1 == true)
         {
             //Vi sætter en bool til falsk, så vi ikke kan skyde.
+            thisGunAnimator.SetBool("Pew", true);
             gun1ShotLimit = false;
             GameObject bulletClone = (GameObject)Instantiate(bullet, throwPoint.transform.position, throwPoint.transform.rotation);
             bulletClone.transform.localScale = -transform.localScale * 2f;
             //Vi får en funktion til at sætte samme bool til sand efter et sekund, så vi kan skyde igen.
             Invoke("ShootAgain", 1f);
+        }
+
+        if (Input.GetKey(KeyCode.H))
+        {
+            print("yeps");
+            gunArm.GetComponent<SpriteRenderer>().enabled = true;
+            penArm.GetComponent<SpriteRenderer>().enabled = false;
+
         }
     }
 
@@ -132,6 +145,8 @@ public class Player1Con : MonoBehaviour
         if (collision.gameObject.tag == "Gun1")
         {
             haveGun1 = true;
+            gunArm.GetComponent<SpriteRenderer>().enabled = true;
+            penArm.GetComponent<SpriteRenderer>().enabled = false;
         }
        
 
