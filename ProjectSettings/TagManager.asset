@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Bullet
   - Gun1
+  - Gun2
+  - ToiletRoll
   layers:
   - Default
   - TransparentFX

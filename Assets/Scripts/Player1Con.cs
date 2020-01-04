@@ -22,9 +22,11 @@ public class Player1Con : MonoBehaviour
     //Variable til at skyde med ketchup pistolen
     public GameObject throwPoint;
     public GameObject bullet;
+    public GameObject toiletPaper;
     private Rigidbody2D rb;
     private bool gun1ShotLimit;
     public bool haveGun1;
+    public bool haveGun2;
 
     //Modstanderens gameobjekt vi bruger til at forhindre dem i at kollidere
     public GameObject opponent;
@@ -48,6 +50,7 @@ public class Player1Con : MonoBehaviour
         gun1ShotLimit = true;
         originalePos = gameObject.transform.position;
         haveGun1 = false;
+        haveGun2 = false;
 
         //Dette er et "for each" loop, hvor vi leder efter alle gameobjekter med tagget "player". Derefter vælger vi det objekt
         //der ikke er denne spiller, og sætter det til at være modstanderen. Så er vi altid sikre på vi kan finde en modstander, så længe
@@ -117,13 +120,18 @@ public class Player1Con : MonoBehaviour
             Invoke("ShootAgain", 1f);
         }
 
-        if (Input.GetKey(KeyCode.H))
+        if (Input.GetKeyDown(shoot) && gun1ShotLimit == true && haveGun2 == true)
         {
-            print("yeps");
-            gunArm.GetComponent<SpriteRenderer>().enabled = true;
-            penArm.GetComponent<SpriteRenderer>().enabled = false;
-
+            //Vi sætter en bool til falsk, så vi ikke kan skyde.
+            thisGunAnimator.SetBool("Pew", true);
+            gun1ShotLimit = false;
+            GameObject toiletPaperClone = (GameObject)Instantiate(toiletPaper, throwPoint.transform.position, throwPoint.transform.rotation);
+            //toiletPaperClone.transform.localScale = -transform.localScale * 2f;
+            //Vi får en funktion til at sætte samme bool til sand efter et sekund, så vi kan skyde igen.
+            Invoke("ShootAgain", 1f);
         }
+
+        
     }
 
     //Her checker vi de forskellige ting der kollider og hvad de gør.
@@ -138,7 +146,7 @@ public class Player1Con : MonoBehaviour
             thisBodyAnimator.SetBool("Jumping", false);
         }
 
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "ToiletRoll")
         {
             Destroy(gameObject);            
         }
@@ -148,7 +156,14 @@ public class Player1Con : MonoBehaviour
             gunArm.GetComponent<SpriteRenderer>().enabled = true;
             penArm.GetComponent<SpriteRenderer>().enabled = false;
         }
-       
+
+        if (collision.gameObject.tag == "Gun2")
+        {
+            haveGun2 = true;
+            gunArm.GetComponent<SpriteRenderer>().enabled = true;
+            penArm.GetComponent<SpriteRenderer>().enabled = false;
+        }
+
 
     }
 
