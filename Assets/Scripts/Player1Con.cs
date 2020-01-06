@@ -38,8 +38,10 @@ public class Player1Con : MonoBehaviour
     public Animator thisBodyAnimator;
     //public Animator thisArmAnimator;
     public Animator thisGunAnimator;
+    public Animator thisToiletGunAnimator;
     public GameObject gunArm;
-    public GameObject penArm;
+    public GameObject Arm;
+    public GameObject toiletArm;
     
 
     void Start()
@@ -123,7 +125,7 @@ public class Player1Con : MonoBehaviour
         if (Input.GetKeyDown(shoot) && gun1ShotLimit == true && haveGun2 == true)
         {
             //Vi sætter en bool til falsk, så vi ikke kan skyde.
-            thisGunAnimator.SetBool("Pew", true);
+            thisToiletGunAnimator.SetBool("Pew", true);
             gun1ShotLimit = false;
             GameObject toiletPaperClone = (GameObject)Instantiate(toiletPaper, throwPoint.transform.position, throwPoint.transform.rotation);
             toiletPaperClone.transform.localScale = -transform.localScale * 2f;
@@ -152,16 +154,20 @@ public class Player1Con : MonoBehaviour
         }
         if (collision.gameObject.tag == "Gun1")
         {
+            haveGun2 = false;
             haveGun1 = true;
+            toiletArm.GetComponent<SpriteRenderer>().enabled = false;
             gunArm.GetComponent<SpriteRenderer>().enabled = true;
-            penArm.GetComponent<SpriteRenderer>().enabled = false;
+            Arm.GetComponent<SpriteRenderer>().enabled = false;
         }
 
         if (collision.gameObject.tag == "Gun2")
         {
+            haveGun1 = false;
             haveGun2 = true;
-            gunArm.GetComponent<SpriteRenderer>().enabled = true;
-            penArm.GetComponent<SpriteRenderer>().enabled = false;
+            gunArm.GetComponent<SpriteRenderer>().enabled = false;
+            Arm.GetComponent<SpriteRenderer>().enabled = false;
+            toiletArm.GetComponent<SpriteRenderer>().enabled = true;
         }
 
 
