@@ -118,7 +118,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 739523523b8e7184f84749cb33bc50e2, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &6773568374935946926
 CircleCollider2D:
@@ -149,9 +149,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18846095, y: 0}
+  m_Offset: {x: 0.08365102, y: 0}
   serializedVersion: 2
-  m_Radius: 2.2290235
+  m_Radius: 2.513508
 --- !u!96 &705270888679815313
 TrailRenderer:
   serializedVersion: 2
