@@ -126,7 +126,7 @@ public class Player1Con : MonoBehaviour
             thisGunAnimator.SetBool("Pew", true);
             gun1ShotLimit = false;
             GameObject toiletPaperClone = (GameObject)Instantiate(toiletPaper, throwPoint.transform.position, throwPoint.transform.rotation);
-            toiletPaperClone.transform.localScale = -transform.localScale;
+            toiletPaperClone.transform.localScale = -transform.localScale * 2f;
             //Vi får en funktion til at sætte samme bool til sand efter et sekund, så vi kan skyde igen.
             Invoke("ShootAgain", 1f);
         }

@@ -182,7 +182,7 @@ MonoBehaviour:
   shoot: 99
   throwPoint: {fileID: 5114977619558786407}
   bullet: {fileID: 5540546401708522699, guid: 7ec86e854fce1cb46b8d859dd230790e, type: 3}
-  toiletPaper: {fileID: 2946317422623437674, guid: 3f43bc139ef683b42a87ee9ef3f0db73,
+  toiletPaper: {fileID: 4459288410667475438, guid: 46c72f3efb15f0548b66e8d0e0a1b64b,
     type: 3}
   haveGun1: 0
   haveGun2: 0
