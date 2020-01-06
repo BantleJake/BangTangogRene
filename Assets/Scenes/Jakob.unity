@@ -4883,7 +4883,7 @@ MonoBehaviour:
   play2: {fileID: 442349456}
   cam: {fileID: 1404793030}
   MinSizeY: 5
-  buffer: 5
+  buffer: 5.5
   play1Prefab: {fileID: 8987100611712544577, guid: 1d6fe8400337a41428511f08afc0f964,
     type: 3}
   play2Prefab: {fileID: 2441682984915931835, guid: d4ac992e9b66eb74aa106168b67854df,
