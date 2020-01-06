@@ -7,6 +7,7 @@ public class Toiletpaper : MonoBehaviour
     public float projSpeedX;
     public float projSpeedY;
     private Rigidbody2D theRB;
+    private int bounceOnce;
 
     
     // Start is called before the first frame update
@@ -27,7 +28,9 @@ public class Toiletpaper : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        bounceOnce++;
+
+        if (bounceOnce >= 2)
         {
             Destroy(gameObject);
         }
