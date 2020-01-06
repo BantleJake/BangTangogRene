@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projSpeedX: 3200
   projSpeedY: 500
+  lifetime: 1.8
 --- !u!50 &5523360443216695625
 Rigidbody2D:
   serializedVersion: 4

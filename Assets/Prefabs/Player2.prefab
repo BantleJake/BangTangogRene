@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &4267650940842559380
 MonoBehaviour:
@@ -157,9 +157,14 @@ MonoBehaviour:
   shoot: 305
   throwPoint: {fileID: 4267650940154483798}
   bullet: {fileID: 5540546401708522699, guid: 7ec86e854fce1cb46b8d859dd230790e, type: 3}
+  toiletPaper: {fileID: 0}
   haveGun1: 0
+  haveGun2: 0
   opponent: {fileID: 0}
   thisBodyAnimator: {fileID: 1490408028}
+  thisGunAnimator: {fileID: 0}
+  gunArm: {fileID: 0}
+  penArm: {fileID: 0}
 --- !u!61 &5235152074759712037
 BoxCollider2D:
   m_ObjectHideFlags: 0
