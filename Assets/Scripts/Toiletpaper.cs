@@ -31,6 +31,13 @@ public class Toiletpaper : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            //Instantiate(bloodSplat, transform.position, transform.rotation);
+            //Instantiate(bulletEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 
 }

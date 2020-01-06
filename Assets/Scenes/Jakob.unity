@@ -187,12 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5114977619791330778, guid: 1d6fe8400337a41428511f08afc0f964,
-        type: 3}
-      propertyPath: toiletPaper
-      value: 
-      objectReference: {fileID: 2946317422623437674, guid: 3f43bc139ef683b42a87ee9ef3f0db73,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d6fe8400337a41428511f08afc0f964, type: 3}
 --- !u!1 &49109182 stripped
@@ -1574,12 +1568,12 @@ PrefabInstance:
     - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.45
+      value: -19.76
       objectReference: {fileID: 0}
     - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.25
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 9091993823840328758, guid: 562c1f69e736563489f1ffa17f83bf1d,
         type: 3}
