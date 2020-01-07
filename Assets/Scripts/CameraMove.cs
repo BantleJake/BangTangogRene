@@ -22,6 +22,16 @@ public class CameraMove : MonoBehaviour
     //Vores variable til at holde styr på runderne
     private int roundCount;
     private bool roundOver;
+    private int controlTracking;
+    public GameObject zero;
+    public GameObject one;
+    public GameObject two;
+    public GameObject three;
+    public GameObject four;
+    public GameObject nOne;
+    public GameObject nTwo;
+    public GameObject nThree;
+    public GameObject nFour;
 
     //Vores to spillere som prefabs, når vi skal spawne dem igen
     public GameObject play1Prefab;
@@ -62,6 +72,21 @@ public class CameraMove : MonoBehaviour
             roundOver = true;
             RoundCounter();
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            controlTracking++;
+            ApartmentControl();
+            print(controlTracking);
+        }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            controlTracking--;
+            ApartmentControl();
+            print(controlTracking);
+        }
+
+        
         
     }
 
@@ -133,5 +158,60 @@ public class CameraMove : MonoBehaviour
     void ResetScene()
     {
         SceneManager.LoadScene("Jakob");
+    }
+
+    void ApartmentControl()
+    {
+        if (controlTracking == 0)
+        {
+            zero.SetActive(true);
+            one.SetActive(false);
+            nOne.SetActive(false);
+        }
+        else if (controlTracking == 1)
+        {
+            one.SetActive(true);
+            zero.SetActive(false);
+            two.SetActive(false);
+        }
+        else if (controlTracking == 2)
+        {
+            two.SetActive(true);
+            one.SetActive(false);
+            three.SetActive(false);
+        }
+        else if (controlTracking == 3)
+        {
+            three.SetActive(true);
+            two.SetActive(false);
+            four.SetActive(false);
+        }
+        else if (controlTracking == 4)
+        {
+            four.SetActive(true);
+            three.SetActive(false);
+            Invoke("ResetScene", 3f);
+        }
+        else if (controlTracking == -1)
+        {
+            nOne.SetActive(true);
+            zero.SetActive(false);
+            nTwo.SetActive(false);
+        } else if (controlTracking == -2)
+        {
+            nTwo.SetActive(true);
+            nOne.SetActive(false);
+            nThree.SetActive(false);
+        } else if (controlTracking == -3)
+        {
+            nThree.SetActive(true);
+            nTwo.SetActive(false);
+            nFour.SetActive(false);
+        } else if (controlTracking == -4)
+        {
+            nFour.SetActive(true);
+            nThree.SetActive(false);
+            Invoke("ResetScene", 3f);
+        }
     }
 }
