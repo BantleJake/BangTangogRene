@@ -128,6 +128,15 @@ public class CameraMove : MonoBehaviour
     //I denne funktion genstarter vi runden, uden at slette de ting vi har ændret. 
     void ResetRound()
     {
+        foreach (GameObject bullet in GameObject.FindGameObjectsWithTag("Bullet"))
+        {
+            Destroy(bullet);
+        }
+
+        foreach (GameObject roll in GameObject.FindGameObjectsWithTag("ToiletRoll"))
+        {
+            Destroy(roll);
+        }
         Destroy(play1);
         Destroy(play2);
         play1 = Instantiate(play1Prefab, new Vector3(-18, -4, 0), Quaternion.identity);

@@ -100,6 +100,9 @@ MonoBehaviour:
   projSpeedX: 1600
   projSpeedY: 500
   lifetime: 1.8
+  rollEffect: {fileID: 7723578947333342993, guid: 79bcf95e0532e1d4d9acc862684cc622,
+    type: 3}
+  toiletTrash: {fileID: 0}
 --- !u!50 &7678342879706568686
 Rigidbody2D:
   serializedVersion: 4

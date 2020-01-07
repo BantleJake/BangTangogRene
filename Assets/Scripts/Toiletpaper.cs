@@ -9,6 +9,8 @@ public class Toiletpaper : MonoBehaviour
     private Rigidbody2D theRB;
     private int bounceOnce;
     public float lifetime;
+    public GameObject rollEffect;
+    public GameObject toiletTrash;
 
     
     // Start is called before the first frame update
@@ -33,26 +35,19 @@ public class Toiletpaper : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Wall")
-        {
-            bounceOnce++;
-            if (bounceOnce >= 2)
-            {
-                Destroy(gameObject);
-            }
-        } 
 
 
         if (collision.gameObject.tag == "Player")
         {
-            //Instantiate(bloodSplat, transform.position, transform.rotation);
-            //Instantiate(bulletEffect, transform.position, transform.rotation);
+            //Instantiate(toiletTrash, transform.position, transform.rotation);
+            Instantiate(rollEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
 
     void DestroyRoll()
     {
+        Instantiate(rollEffect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 
