@@ -36,10 +36,16 @@ public class CameraMove : MonoBehaviour
     //Vores to spillere som prefabs, når vi skal spawne dem igen
     public GameObject play1Prefab;
     public GameObject play2Prefab;
+    public GameObject spawn1;
+    public GameObject spawn2;
+    Vector3 spawn1cor;
+    Vector3 spawn2cor;
 
     private void Start()
     {
         roundOver = false;
+        spawn1cor = spawn1.transform.position;
+        spawn2cor = spawn2.transform.position;
     }
 
 
@@ -139,8 +145,8 @@ public class CameraMove : MonoBehaviour
         }
         Destroy(play1);
         Destroy(play2);
-        play1 = Instantiate(play1Prefab, new Vector3(-18, -4, 0), Quaternion.identity);
-        play2 = Instantiate(play2Prefab, new Vector3(16, 2, 0), Quaternion.identity);
+        play1 = Instantiate(play1Prefab, spawn1cor, Quaternion.identity);
+        play2 = Instantiate(play2Prefab, spawn2cor, Quaternion.identity);
         roundOver = false;
         
     }
