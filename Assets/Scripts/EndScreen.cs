@@ -12,6 +12,7 @@ public class EndScreen : MonoBehaviour
     void Start()
     {
         ImageTwo();
+        Invoke("ResetGame", 6f);
     }
 
     // Update is called once per frame

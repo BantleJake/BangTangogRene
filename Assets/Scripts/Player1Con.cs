@@ -21,6 +21,7 @@ public class Player1Con : MonoBehaviour
 
     //Variable til at skyde med ketchup pistolen
     public GameObject throwPoint;
+    public GameObject throwPoint2;
     public GameObject bullet;
     public GameObject toiletPaper;
     private Rigidbody2D rb;
@@ -127,7 +128,7 @@ public class Player1Con : MonoBehaviour
             //Vi sætter en bool til falsk, så vi ikke kan skyde.
             thisToiletGunAnimator.SetBool("Pew", true);
             gun1ShotLimit = false;
-            GameObject toiletPaperClone = (GameObject)Instantiate(toiletPaper, throwPoint.transform.position, throwPoint.transform.rotation);
+            GameObject toiletPaperClone = (GameObject)Instantiate(toiletPaper, throwPoint2.transform.position, throwPoint2.transform.rotation);
             toiletPaperClone.transform.localScale = -transform.localScale * 2f;
             //Vi får en funktion til at sætte samme bool til sand efter et sekund, så vi kan skyde igen.
             Invoke("ShootAgain", 1f);

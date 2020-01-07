@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b0f8ea028a0d54da8c090c9eeebcef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projSpeedX: 1600
-  projSpeedY: 500
+  projSpeedX: 1100
+  projSpeedY: 700
   lifetime: 1.8
   rollEffect: {fileID: 7723578947333342993, guid: 79bcf95e0532e1d4d9acc862684cc622,
     type: 3}

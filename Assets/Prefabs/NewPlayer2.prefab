@@ -594,7 +594,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9144934070121561048, guid: eae160c69f0cf3942ab2d9928c079075,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1080,6 +1080,7 @@ Transform:
   - {fileID: 7031558936975679459}
   - {fileID: 7031558937458586787}
   - {fileID: 5633305777744486233}
+  - {fileID: 1673398177535555202}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1123,6 +1124,7 @@ MonoBehaviour:
   jump: 273
   shoot: 305
   throwPoint: {fileID: 7031558936975679460}
+  throwPoint2: {fileID: 5082873973812075246}
   bullet: {fileID: 5540546401708522699, guid: 7ec86e854fce1cb46b8d859dd230790e, type: 3}
   toiletPaper: {fileID: 4459288410667475438, guid: 46c72f3efb15f0548b66e8d0e0a1b64b,
     type: 3}
@@ -1423,6 +1425,36 @@ Transform:
   m_Father: {fileID: 2441682984900117598}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5082873973812075246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673398177535555202}
+  m_Layer: 0
+  m_Name: ThrowPointToi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673398177535555202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082873973812075246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.5, y: 1.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2441682984915931834}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &899391303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,7 +1478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7031558936975679459}
   m_Layer: 0
-  m_Name: ThrowPoint
+  m_Name: ThrowPointKet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1460,7 +1492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7031558936975679460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.700001, y: 2.35, z: 449.6639}
+  m_LocalPosition: {x: -5.41, y: 2.35, z: 449.6639}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2441682984915931834}
