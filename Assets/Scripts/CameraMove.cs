@@ -164,7 +164,14 @@ public class CameraMove : MonoBehaviour
     //Simpel funktion der genstarter scenen.
     void ResetScene()
     {
-        SceneManager.LoadScene("Main");
+        if (controlTracking >= 4)
+        {
+            SceneManager.LoadScene("Player2Win");
+        }
+        if (controlTracking <= -4)
+        {
+            SceneManager.LoadScene("Player1Win");
+        }
     }
 
     void ApartmentControl()
