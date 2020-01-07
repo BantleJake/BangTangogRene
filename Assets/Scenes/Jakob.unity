@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5114977619791330776, guid: 1d6fe8400337a41428511f08afc0f964,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d6fe8400337a41428511f08afc0f964, type: 3}
 --- !u!1 &49109182 stripped
@@ -2890,7 +2895,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.103177786, y: 2.0628548}
+  m_Offset: {x: -0.103178024, y: 1.2832289}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2901,7 +2906,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.724377, y: 34.359756}
+  m_Size: {x: 8.724377, y: 32.800507}
   m_EdgeRadius: 0
 --- !u!1 &614212977
 GameObject:
@@ -3116,7 +3121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 18.39}
+  m_Offset: {x: -0.11780238, y: 18.39}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3127,7 +3132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 1}
+  m_Size: {x: 8.664925, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &741085025
 GameObject:
@@ -7832,6 +7837,11 @@ PrefabInstance:
     - target: {fileID: 2441682984915931834, guid: d4ac992e9b66eb74aa106168b67854df,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031558937738897453, guid: d4ac992e9b66eb74aa106168b67854df,
+        type: 3}
+      propertyPath: m_SleepingMode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

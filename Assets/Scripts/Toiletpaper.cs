@@ -34,13 +34,16 @@ public class Toiletpaper : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
 
 
         if (collision.gameObject.tag == "Player")
         {
-            //Instantiate(toiletTrash, transform.position, transform.rotation);
             Instantiate(rollEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.tag == "Bullet")
+        {
             Destroy(gameObject);
         }
     }
