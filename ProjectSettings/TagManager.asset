@@ -10,6 +10,7 @@ TagManager:
   - Gun2
   - ToiletRoll
   - Wall
+  - Trash
   layers:
   - Default
   - TransparentFX

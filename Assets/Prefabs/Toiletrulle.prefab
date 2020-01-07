@@ -102,7 +102,8 @@ MonoBehaviour:
   lifetime: 1.8
   rollEffect: {fileID: 7723578947333342993, guid: 79bcf95e0532e1d4d9acc862684cc622,
     type: 3}
-  toiletTrash: {fileID: 0}
+  toiletTrash: {fileID: 7159833678340037019, guid: d7334b5df83687047bf935416bd70cee,
+    type: 3}
 --- !u!50 &7678342879706568686
 Rigidbody2D:
   serializedVersion: 4
@@ -123,7 +124,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1320330863346745366
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

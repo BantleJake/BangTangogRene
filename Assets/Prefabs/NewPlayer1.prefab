@@ -131,7 +131,7 @@ Rigidbody2D:
   m_GravityScale: 8
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &5114977619791330777
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 487749e05bd8bae428e7db0446b4a8fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1030,7 +1030,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3143547508634614106, guid: feacd80174bb4714991f1cdfcdf45b39,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1227,7 +1227,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2972025652223192025, guid: c78077c85a220e54eb9ff9dc3152cbbd,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1631,7 +1631,7 @@ PrefabInstance:
     - target: {fileID: 2910372621323135241, guid: 0036e0d8947eb9944a4759528db3e8b3,
         type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0036e0d8947eb9944a4759528db3e8b3, type: 3}

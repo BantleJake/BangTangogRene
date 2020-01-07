@@ -38,18 +38,22 @@ public class Toiletpaper : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            Instantiate(toiletTrash, transform.position, transform.rotation);
             Instantiate(rollEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
 
         if (collision.gameObject.tag == "Bullet")
         {
+            Instantiate(toiletTrash, transform.position, transform.rotation);
+            Instantiate(rollEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
 
     void DestroyRoll()
     {
+        Instantiate(toiletTrash, transform.position, transform.rotation);
         Instantiate(rollEffect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
