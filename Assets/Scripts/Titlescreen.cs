@@ -20,7 +20,7 @@ public class Titlescreen : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("Jakob");
+            SceneManager.LoadScene("Main");
         }
     }
 

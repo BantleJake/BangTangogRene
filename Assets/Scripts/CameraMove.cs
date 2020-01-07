@@ -164,7 +164,7 @@ public class CameraMove : MonoBehaviour
     //Simpel funktion der genstarter scenen.
     void ResetScene()
     {
-        SceneManager.LoadScene("Jakob");
+        SceneManager.LoadScene("Main");
     }
 
     void ApartmentControl()
