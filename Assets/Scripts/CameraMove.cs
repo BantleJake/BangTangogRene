@@ -86,7 +86,7 @@ public class CameraMove : MonoBehaviour
             print(controlTracking);
         }
 
-        
+        ApartmentControl();
         
     }
 
@@ -139,18 +139,16 @@ public class CameraMove : MonoBehaviour
     //I denne funktion genstarter vi runden med en lille forsinkelse, og tæller op på rundetælleren. Når vi har spillet 3 runder, genstarter scenen.
     void RoundCounter()
     {
-        if(roundCount == 0)
+        if (controlTracking <5 && controlTracking > -5)
         {
             Invoke("ResetRound", 3f);
-            roundCount++;
-        } else if(roundCount == 1)
-        {
-            Invoke("ResetRound", 3f);
-            roundCount++;
         }
-        else if (roundCount == 2)
+        if (play1 !=null && play2 == null)
         {
-            Invoke("ResetScene", 3f);
+            controlTracking--;
+        } else if (play2 != null && play1 == null)
+        {
+            controlTracking++;
         }
     }
 
