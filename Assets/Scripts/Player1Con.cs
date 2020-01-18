@@ -37,12 +37,12 @@ public class Player1Con : MonoBehaviour
 
     //Animationssystem
     public Animator thisBodyAnimator;
-    //public Animator thisArmAnimator;
     public Animator thisGunAnimator;
     public Animator thisToiletGunAnimator;
     public GameObject gunArm;
     public GameObject Arm;
     public GameObject toiletArm;
+    public GameObject ketDeath;
     
 
     void Start()
@@ -134,7 +134,8 @@ public class Player1Con : MonoBehaviour
             Invoke("ShootAgain", 1f);
         }
 
-        
+       
+
     }
 
     //Her checker vi de forskellige ting der kollider og hvad de gør.
@@ -149,9 +150,16 @@ public class Player1Con : MonoBehaviour
             thisBodyAnimator.SetBool("Jumping", false);
         }
 
-        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "ToiletRoll")
+        if (collision.gameObject.tag == "Bullet")
         {
+            GameObject ketDeathClone = (GameObject)Instantiate(ketDeath, transform.position, transform.rotation);
+            ketDeathClone.transform.localScale = transform.localScale;
             Destroy(gameObject);            
+        }
+
+        if (collision.gameObject.tag == "ToiletRoll")
+        {
+            Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Gun1")
         {

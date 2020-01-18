@@ -1137,6 +1137,8 @@ MonoBehaviour:
   gunArm: {fileID: 2441682984120981650}
   Arm: {fileID: 7031558937458586789}
   toiletArm: {fileID: 5633305777744486236}
+  ketDeath: {fileID: 3457382025944964503, guid: 295cbf4b982d1884db9add0895547c45,
+    type: 3}
 --- !u!61 &7031558937738897455
 BoxCollider2D:
   m_ObjectHideFlags: 0

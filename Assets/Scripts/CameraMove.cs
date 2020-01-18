@@ -143,6 +143,12 @@ public class CameraMove : MonoBehaviour
         {
             Destroy(roll);
         }
+
+        foreach (GameObject dead in GameObject.FindGameObjectsWithTag("Death"))
+        {
+            Destroy(dead);
+        }
+
         Destroy(play1);
         Destroy(play2);
         play1 = Instantiate(play1Prefab, spawn1cor, Quaternion.identity);

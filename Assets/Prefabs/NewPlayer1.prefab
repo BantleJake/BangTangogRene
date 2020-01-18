@@ -239,6 +239,8 @@ MonoBehaviour:
   gunArm: {fileID: 8987100613126985299}
   Arm: {fileID: 8987100612914848447}
   toiletArm: {fileID: 2910372620832523179}
+  ketDeath: {fileID: 3780360944012996174, guid: 5cc136775b8d03b4986a4a0c81315546,
+    type: 3}
 --- !u!1 &8987100611733757297
 GameObject:
   m_ObjectHideFlags: 0

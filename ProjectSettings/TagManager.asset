@@ -11,6 +11,7 @@ TagManager:
   - ToiletRoll
   - Wall
   - Trash
+  - Death
   layers:
   - Default
   - TransparentFX
