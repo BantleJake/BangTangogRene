@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &665809439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2910372620832523179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f010ed661bc1042b87456107b38751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gun: {fileID: 2910372620832523178}
 --- !u!82 &4215835508316949639
 AudioSource:
   m_ObjectHideFlags: 0
@@ -109,6 +96,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &665809439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2910372620832523179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f010ed661bc1042b87456107b38751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 2910372620832523178}
 --- !u!114 &531653542589222788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +349,8 @@ MonoBehaviour:
   Arm: {fileID: 8987100612914848447}
   toiletArm: {fileID: 2910372620832523179}
   ketDeath: {fileID: 3780360944012996174, guid: 5cc136775b8d03b4986a4a0c81315546,
+    type: 3}
+  toiDeath: {fileID: 7202724216644459512, guid: 6906b0e1d5b031e499956381ec9eb5a6,
     type: 3}
 --- !u!82 &49109183
 AudioSource:

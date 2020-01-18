@@ -45,6 +45,7 @@ public class Player1Con : MonoBehaviour
     public GameObject Arm;
     public GameObject toiletArm;
     public GameObject ketDeath;
+    public GameObject toiDeath;
     
 
     void Start()
@@ -163,6 +164,8 @@ public class Player1Con : MonoBehaviour
 
         if (collision.gameObject.tag == "ToiletRoll")
         {
+            GameObject toiDeathClone = (GameObject)Instantiate(toiDeath, transform.position, transform.rotation);
+            toiDeathClone.transform.localScale = transform.localScale * 2f;
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Gun1")
