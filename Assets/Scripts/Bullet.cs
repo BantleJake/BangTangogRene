@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 
     public float projSpeed;
     private Rigidbody2D theRB;
+    
 
     public GameObject bulletEffect;
     public GameObject bloodSplat;
@@ -14,6 +15,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
+        
     }
 
 
@@ -31,6 +33,7 @@ public class Bullet : MonoBehaviour
         Instantiate(bloodSplat, transform.position, transform.rotation);
         Instantiate(bulletEffect, transform.position, transform.rotation);
 
+        
         Destroy(gameObject);
     }
 }

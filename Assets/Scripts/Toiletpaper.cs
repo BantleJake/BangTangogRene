@@ -11,13 +11,13 @@ public class Toiletpaper : MonoBehaviour
     public float lifetime;
     public GameObject rollEffect;
     public GameObject toiletTrash;
+    AudioSource sound;
 
-    
     // Start is called before the first frame update
     void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
-
+        sound = GetComponent<AudioSource>();
         theRB.AddForce(new Vector2(projSpeedX * transform.localScale.x * 5, projSpeedY));
 
         Invoke("DestroyRoll", lifetime);
@@ -29,12 +29,18 @@ public class Toiletpaper : MonoBehaviour
     // Vi sætter kuglens hastighed og sender den afsted i forhold til hvilken vej spilleren kigger
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject)
+        {
+            sound.Play(0);
+            print("hep");
+        }
 
+        
 
         if (collision.gameObject.tag == "Player")
         {

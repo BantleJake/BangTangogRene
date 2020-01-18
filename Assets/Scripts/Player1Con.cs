@@ -13,6 +13,8 @@ public class Player1Con : MonoBehaviour
     //En bool der checker om spilleren står på jorden
     private bool jumpCheck;
 
+    AudioSource sound;
+
     //Custom controls der kan sættes i editoren
     public KeyCode left;
     public KeyCode right;
@@ -67,7 +69,8 @@ public class Player1Con : MonoBehaviour
         }
         //Nu hvor vi har en modstander kan vi fortælle unity at den skal ignorerer collisionen mellem disse.
         Physics2D.IgnoreCollision(opponent.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
-        
+
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -148,6 +151,7 @@ public class Player1Con : MonoBehaviour
         {
             jumpCheck = false;
             thisBodyAnimator.SetBool("Jumping", false);
+            sound.Play(0);
         }
 
         if (collision.gameObject.tag == "Bullet")
@@ -188,6 +192,7 @@ public class Player1Con : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             jumpCheck = true;
+            
         }
     }
 
